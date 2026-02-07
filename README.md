@@ -1,21 +1,61 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Han Lee - Portfolio Website
 
-# Run and deploy your AI Studio app
+A personal portfolio website built with React, TypeScript, and Vite, featuring a clean, responsive design to showcase projects, publications, and blog posts.
 
-This contains everything you need to run your app locally.
+## 🚀 Tech Stack
 
-View your app in AI Studio: https://ai.studio/apps/temp/1
+-   **Frontend Framework:** [React 19](https://react.dev/)
+-   **Language:** [TypeScript](https://www.typescriptlang.org/)
+-   **Build Tool:** [Vite](https://vitejs.dev/)
+-   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+-   **Icons:** [Lucide React](https://lucide.dev/)
+-   **Deployment:** GitHub Pages (planned)
 
-## Run Locally
+## ✨ Features
 
-**Prerequisites:**  Node.js
+-   **Responsive Design:** Fully adaptive layout for desktop, tablet, and mobile devices.
+-   **Project Showcase:** Grid/Stack layout to display portfolio projects with links to repositories and live demos.
+-   **Publications Section:** Dedicated section for peer-reviewed papers with PubMed integration.
+-   **Blog:** A space for sharing thoughts on software engineering and career transitions.
+-   **Resume Download:** Direct link to download the resume PDF.
 
+## 🛠️ Installation & Setup
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
-# portfolio-website
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/hanhylee/portfolio-website.git
+    cd portfolio-website
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    ```
+
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    ```
+
+4.  **Build for production:**
+    ```bash
+    npm run build
+    ```
+
+## 📂 Project Structure
+
+```
+.
+├── src/
+│   ├── components/     # Reusable UI components (Navbar, Hero, Projects, etc.)
+│   ├── constants.ts    # Static data for projects, publications, and blog posts
+│   ├── types.ts        # TypeScript interfaces and types
+│   ├── App.tsx         # Main application component
+│   └── main.tsx        # Entry point
+├── public/             # Static assets (images, resume.pdf)
+└── tailwind.config.js  # Tailwind CSS configuration
+```
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
