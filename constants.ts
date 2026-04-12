@@ -6,34 +6,47 @@ export const PERSONAL_INFO = {
   location: "Vancouver, BC",
   linkedin: "https://www.linkedin.com/in/han-hyung-lee/",
   github: "https://github.com/hanhylee",
-  summary: "Aspiring software developer with project and work experience in React, Java, and Python, and a strong interest in using algorithms and models to derive valuable information from data. Self-starter with strong communication skills and experience working with stakeholders to understand and solve business problems.",
+  summary: "Aspiring software engineer and 3rd-year UBC BCS student with full-stack and research experience, two peer-reviewed publications, and a track record of collaborative problem-solving across technical and cross-functional teams.",
   skills: {
-    web: ["React", "Tailwind CSS", "Django", "Spring Boot", "Next.js"],
-    languages: ["Python", "JavaScript", "TypeScript", "SQL", "C++", "Java"],
-    tools: ["PostgreSQL", "Git", "Docker", "Redis"]
+    web: ["React", "TypeScript", "Next.js", "Django", "FastAPI", "Spring Boot", "Tailwind CSS"],
+    languages: ["Python", "Java", "C++", "Racket", "SQL", "JavaScript"],
+    tools: ["PostgreSQL", "Docker", "Git", "GitHub", "GCP", "Vercel", "Render", "Linear", "Power BI", "Salesforce", "Microsoft 365"]
   }
 };
 
 export const EXPERIENCE: Experience[] = [
   {
     company: "NPower Canada",
-    role: "Program Manager",
+    role: "Program Manager (1 year) | Career Specialist (1.5 years)",
     location: "Vancouver, BC",
-    period: "March 2025 - Present",
+    period: "November 2023 - Present",
     achievements: [
-      "Designed and implemented automated workflows using custom scripts on Microsoft Power Automate for SharePoint, streamlining administrative processes and saving thousands of hours organisation-wide.",
-      "Analyzed program outcomes by evaluating qualitative feedback and quantitative data for 1000+ learners, identifying opportunities to enhance delivery and ensure robustness of program benchmarks."
+      "Supported an 8-person team to deliver high-quality training in cloud computing, data analysis and visualization, version control, and professional communication with a 100% certification rate.",
+      "Collaborated with internal departments to provide warm employer referrals, support-service access, and mentorship opportunities, while serving as a secondary point of contact for the BC Ministry and external stakeholders.",
+      "Tools: Microsoft 365 (Power Automate, Loop, Teams, Excel, PowerPoint, Word), Salesforce, Dayforce, Slack."
     ]
   },
   {
-    company: "Hyper AI",
+    company: "HyperFX",
     role: "Full Stack Developer (Remote, Part-Time)",
     location: "Los Angeles, CA",
     period: "August 2025 - November 2025",
     achievements: [
-      "Developed frontend components and services to analyse end-user API usage and manage agentic workflows.",
-      "Implemented and documented robust integrations for external tools including Calendly, Zoom and Google Analytics.",
-      "Supported application reliability by resolving 50+ user- and internal-reported bugs in a continuous integration and delivery environment."
+      "Implemented a frontend component for building and editing node-based agentic workflows, including tooling for LLMs to construct workflows in response to user requests.",
+      "Contributed to daily stand-ups, sprint planning, and retrospectives with the CEO, team lead, and full-stack peers to maintain and improve the codebase.",
+      "Resolved 40+ user-reported bugs within one month through clear communication, critical thinking, and fast iteration.",
+      "Tools: React, TypeScript, Python, Django, FastAPI, GCP, PostgreSQL, Docker, Linear, Vercel, Render, Cursor, Git, GitHub."
+    ]
+  },
+  {
+    company: "The Chinese University of Hong Kong | University of Alberta",
+    role: "Research Fellow",
+    location: "Hong Kong | Edmonton, AB",
+    period: "September 2016 - April 2022",
+    achievements: [
+      "Conducted literature reviews, generated research leads, secured funding, and defended findings in peer-review settings.",
+      "Produced several conference abstracts, delivered an international oral seminar, and contributed to two peer-reviewed publications.",
+      "Tools: Power BI, GraphPad Prism, Microsoft Office (Excel, PowerPoint, Word)."
     ]
   }
 ];
@@ -45,9 +58,28 @@ export const PROJECTS: Project[] = [
     role: "Full Stack Developer",
     techStack: ["Spring Boot", "Java 21", "Next.js", "PostgreSQL", "Redis", "Docker", "JUnit 5", "Mockito"],
     description: [
-      "Architected and developed an end-to-end Spring Boot and Next.js application, aggregating job opportunities and intelligently matching candidates through AI-powered analysis.",
-      "Engineered a microservices-oriented, distributed system with PostgreSQL 17 and Redis for efficient data analysis of large datasets, implementing secure RESTful APIs with JWT authentication.",
-      "Developed sophisticated AI analysis tools leveraging Large Language Models for automated resume generation and qualification scoring, ensuring reliability with comprehensive testing."
+      "Built an end-to-end Spring Boot and Next.js application that matches candidates using agentic workflows integrated with MCP servers and dynamic API routing for LLM-generated flows.",
+      "Developed a minimally coupled backend with secure JWT-authenticated REST APIs and test-driven development practices to reduce technical debt and improve maintainability."
+    ]
+  },
+  {
+    title: "Credit Card Default Prediction Model",
+    website: "https://hanhylee.github.io/credit-card-defaults-ml-project/",
+    role: "Machine Learning Developer",
+    techStack: ["Python", "Pandas", "NumPy", "Scikit-learn", "Jupyter Notebook"],
+    description: [
+      "Built and documented a supervised learning pipeline to predict credit card default risk.",
+      "Focused on reproducibility and explainability through clear feature engineering, model evaluation, and reporting."
+    ]
+  },
+  {
+    title: "Eggsight",
+    website: "https://github.com/bork-research-institute/eggsight",
+    role: "AI Developer",
+    techStack: ["ElizaOS", "Python", "Twitter API", "LLMs", "Machine Learning"],
+    description: [
+      "Built an agentic framework forked from ElizaOS to generate real-time market insights from ML pipelines using Twitter API data and LLM-based sentiment extraction.",
+      "Validated an automated trading bot in a prospective study, demonstrating the platform's live predictive accuracy."
     ]
   }
 ];
@@ -57,19 +89,19 @@ export const EDUCATION: Education[] = [
     degree: "Bachelor of Computer Science",
     institution: "University of British Columbia",
     location: "Vancouver, BC",
-    period: "September 2025 - Present"
+    period: "Expected 2027"
   },
   {
     degree: "Master of Science in Physiology",
     institution: "University of Alberta",
     location: "Edmonton, AB",
-    period: "September 2016 - October 2018"
+    period: "Graduated 2018"
   },
   {
     degree: "Bachelor of Science in Physiology",
     institution: "University of Alberta",
     location: "Edmonton, AB",
-    period: "September 2012 - April 2016"
+    period: "Graduated 2016"
   }
 ];
 
