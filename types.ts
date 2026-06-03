@@ -1,9 +1,10 @@
 export interface Project {
   title: string;
-  website: string;
+  website?: string;
   role: string;
   techStack: string[];
   description: string[];
+  status?: string;
 }
 
 export interface Experience {

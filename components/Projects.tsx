@@ -20,9 +20,15 @@ const Projects: React.FC = () => {
                 <div className="flex justify-between items-center">
                   <h3 className="text-2xl font-bold text-gray-900">{project.title}</h3>
                   <div className="flex space-x-2">
-                    <a href={project.website} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-5 w-5 text-gray-400 hover:text-primary cursor-pointer" />
-                    </a>
+                    {project.website ? (
+                      <a href={project.website} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-5 w-5 text-gray-400 hover:text-primary cursor-pointer" />
+                      </a>
+                    ) : project.status ? (
+                      <span className="px-2 py-0.5 bg-gray-100 text-xs font-medium text-gray-500 border border-gray-200 rounded-full whitespace-nowrap">
+                        {project.status}
+                      </span>
+                    ) : null}
                   </div>
                 </div>
                 

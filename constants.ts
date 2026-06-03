@@ -53,6 +53,46 @@ export const EXPERIENCE: Experience[] = [
 
 export const PROJECTS: Project[] = [
   {
+    title: "CanCareer",
+    website: "https://www.cancareer.com",
+    role: "Full Stack Developer",
+    techStack: ["Cloudflare Workers", "Hono", "React", "TypeScript", "Better Auth", "Drizzle", "D1", "R2", "Workers AI"],
+    description: [
+      "Built a full-stack job-application tracker on Cloudflare's edge, serving a React/Vite SPA and Hono API same-origin from a single Worker, backed by D1 and R2.",
+      "Added an AI resume-to-job-description matching analyzer (an isolated Workers AI service) that scores how well a resume fits a posting."
+    ]
+  },
+  {
+    title: "OImpact",
+    website: "https://oimpact.ai",
+    role: "Full Stack Developer Intern",
+    techStack: ["Cloudflare Workers", "Durable Objects", "TypeScript", "Hono", "React", "AI SDK"],
+    description: [
+      "Designed the platform's grants agent: 9 composable skills that guide a nonprofit through the full grant lifecycle (funder discovery, fit and eligibility gating, application coaching, pipeline tracking, and debrief), with guardrails that never invent a funder, deadline, or amount.",
+      "Fixed bugs across the agent model-selection and skill-generation flows in a TypeScript monorepo on Cloudflare Workers and Durable Objects."
+    ]
+  },
+  {
+    title: "MediForm",
+    role: "Founder / Developer",
+    status: "Private",
+    techStack: ["Python", "FastAPI", "Pydantic", "SQLModel", "PostgreSQL", "Whisper", "LLMs"],
+    description: [
+      "Building an AI agent that helps clinicians complete clinical forms from records they already have, ingesting text, PDF, image, and audio and mapping it to the target form.",
+      "Designed it to flag exactly what's missing instead of guessing, with every filled field traceable to its source; eval-driven for reliability."
+    ]
+  },
+  {
+    title: "K-12 Platform",
+    role: "Full Stack Developer",
+    status: "In development",
+    techStack: ["Cloudflare Workers", "Hono", "React 19", "TypeScript", "D1", "Drizzle", "Durable Objects", "Stripe", "R2", "Queues"],
+    description: [
+      "Designing a multi-tenant K-12 education SaaS: a shared platform core (identity, billing, notifications, audit) with independent modules like facilities booking and a parent portal.",
+      "Architected per-tenant data isolation (one D1 database per school division) on a fully Cloudflare-native stack optimized for a small team."
+    ]
+  },
+  {
     title: "HireMelon",
     website: "https://www.hiremelon.com",
     role: "Full Stack Developer",
